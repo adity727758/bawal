@@ -318,7 +318,10 @@ owner_menu_markup = ReplyKeyboardMarkup(owner_menu_keyboard, resize_keyboard=Tru
 co_owner_menu_keyboard = [
     ['Add Group ID', 'Remove Group ID'],
     ['RE Status', 'Add VPS'],
-    ['Set Display Name', 'Back to Home' ]
+    ['Set Display Name', '📢 Broadcast'],
+    ['📜 View Logs', 'Change Channel' ],
+    ['🔗 Manage Links', 'Promote'],
+    ['Back to Home' ]
     
 ]
 co_owner_menu_markup = ReplyKeyboardMarkup(co_owner_menu_keyboard, resize_keyboard=True)
@@ -1528,7 +1531,7 @@ async def generate_special_key_format(update: Update, context: CallbackContext):
         f"⚡ *Max Duration:* {SPECIAL_MAX_DURATION} sec\n"
         f"🧵 *Max Threads:* {SPECIAL_MAX_THREADS}\n\n"
         f"👑 *Bot Owner:* PAPA KA BOT\n\n"
-        f"⚠️ *This key provides enhanced attack capabilities when you fucking Ritik mommy!*",
+        f"⚠️ *This key provides enhanced attack capabilities when you fucking BGMI!*",
         parse_mode='Markdown'
     )
     return ConversationHandler.END
@@ -1587,7 +1590,7 @@ async def redeem_key_input(update: Update, context: CallbackContext):
             f"• Max Duration: {SPECIAL_MAX_DURATION} sec\n"
             f"• Max Threads: {SPECIAL_MAX_THREADS}\n\n"
             f"👑 *Bot Owner:* {current_display_name}\n\n"
-            f"⚡ *Happy attacking and ritik ki maka chut phaad do!*",
+            f"⚡ *Happy attacking and BGMI ki maka chut phaad do!*",
             parse_mode='Markdown'
         )
     else:
@@ -1760,7 +1763,7 @@ async def attack_input(update: Update, context: CallbackContext):
         f"🧵 *Threads*: {threads}\n"
         f"🌐 *VPS Used*: `{selected_vps_ip}`\n"
         f"👑 *Bot Owner:* {current_display_name}\n\n"
-        f"🔥 *RITIK KI MUMMY CHODNA CHALU HO GY HA! 💥*",
+        f"🔥 *BGMI KI MUMMY CHODNA CHALU HO GY HA! 💥*",
         parse_mode='Markdown'
     )
 
@@ -1815,7 +1818,7 @@ async def attack_input(update: Update, context: CallbackContext):
                 f"🧵 *Threads*: {threads}\n"
                 f"🌐 *VPS Used*: `{selected_vps_ip}`\n"
                 f"👑 *Bot Owner:* {current_display_name}\n\n"
-                f"🔥 *RITIK KI MUMMY CHODNA AB BND HO GY HA.*",
+                f"🔥 *BGMI KI MUMMY CHODNA AB BND HO GY HA.*",
                 parse_mode='Markdown'
             )
         except Exception as e:
@@ -2536,7 +2539,6 @@ async def rules(update: Update, context: CallbackContext):
         "5. Respect other users and the bot owner.\n\n"
         "6. Any violation of these rules will result key ban with no refund.\n\n\n"
         "BSDK RULES FOLLOW KRNA WARNA GND MAR DUNGA.\n\n"
-        "JO BHI RITIK KI MAKI CHUT PHAADKE SS DEGA USSE EXTRA KEY DUNGA.\n\n"
     )
     await update.message.reply_text(rules_text, parse_mode='Markdown')
 
