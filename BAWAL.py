@@ -38,16 +38,16 @@ BOT_CONFIG_FILE = "bot_configs.json"
 BOT_DATA_DIR = "bot_data"  # Directory to store each bot's data
 
 # Bot Configuration
-TELEGRAM_BOT_TOKEN = '7617029750:AAEJu6Chuaof1aUBZk25jMtaZCH5AtHOR5Y'
+TELEGRAM_BOT_TOKEN = '7694477480:AAHfV8Ih8LWcf4CwuqsdhRZmPzZZtUXOyaM'
 OWNER_USERNAME = "Riyahacksyt"
 CO_OWNERS = []  # List of user IDs for co-owners
 OWNER_CONTACT = "Contact @rtt to buy keys"
-ALLOWED_GROUP_IDS = [-10022951613]
+ALLOWED_GROUP_IDS = [-1002283210199]
 MAX_THREADS = 1000
 max_duration = 120
 bot_open = False
 SPECIAL_MAX_DURATION = 240
-SPECIAL_MAX_THREADS = 2000
+SPECIAL_MAX_THREADS = 4000
 BOT_START_TIME = time.time()
 
 # Display Name Configuration
